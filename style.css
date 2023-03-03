@@ -1,0 +1,143 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.178);
+}
+
+.logo {
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    background-color: whitesmoke;
+    border-bottom: 5px solid #1D59B3;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.mainInput {
+    height: 30vh;
+    width: 70%;
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 15px;
+    padding: 24px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: space-around;
+
+}
+
+.titleField {
+    display: block;
+    height: 5vh;
+    border-radius: 12px;
+    box-shadow: 2px 2px 6px 1px #1D59B3;
+    border: none;
+    resize: none;
+}
+
+.titleField:focus {
+    background-color: lightblue;
+}
+
+.nameField {
+    display: block;
+    height: 100px;
+    border-radius: 12px;
+    border: none;
+    box-shadow: 2px 2px 6px 1px #1D59B3;
+    resize: none;
+}
+
+.nameField:focus {
+    background-color: lightblue;
+}
+
+.inputBoxButton {
+    background-color: #42A4EB;
+    border-radius: 12px;
+    height: 5vh;
+    display: block;
+}
+
+.notes {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #1D59B3;
+}
+
+/*
+.noticeField {
+    word-wrap: break-word;
+    padding: 5px;
+    height: 150px;
+    width: 150px;
+    border-radius: 12px;
+    box-shadow: 2px 2px 6px 1px #1D59B3;
+
+}
+
+.deleteBoxButton2 {
+    margin-top: 80px;
+    margin-left: 90px;
+}
+
+.containerDeleteButton2 {
+    position: fixed;
+    
+}
+
+*/
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.noticeContainer {
+    border: 1px solid #1D59B3;;
+    border-radius: 12px;
+    margin-top: 20px;
+    width: 50vw;
+    word-break: break-all;
+    padding: 9px;
+}
+
+.noticeText {
+    margin-top: 14px;
+}
+
+/* Container für deinen Title und die Note */
+.noticeFieldNote {
+    /* Hier die Höhe deines ContainerDeleteButton2 ändern */
+    --containerDeleteButtonHeight: 30px;
+    /* Die 30px kommen von deinem ButtonContainer */
+    height: calc(100% - var(--containerDeleteButtonHeight));
+}
+
+.containerDeleteButton2 {
+    height: var(--containerDeleteButtonHeight);
+    display: flex;
+    justify-content: right;
+    margin-top: 14px;
+
+}
