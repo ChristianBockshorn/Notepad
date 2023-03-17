@@ -3,9 +3,10 @@ let texts = [];
 
 load();
 
-function render() {
+function render(title) {
     let content = document.getElementById('content');
     content.innerHTML = '';
+    
 
     renderContent()
 
@@ -33,10 +34,17 @@ function renderContent() {
                 <input id="title" type="text" class="titleField" placeholder="Titel..."></textarea><br>
                 <input id="text" type="text" class="nameField" placeholder="Deine Notiz..."></textarea><br>
                 <button class="inputBoxButton" onclick="addNotes()">Hinzufügen</button>
-                <button class="deleteBoxButton" onclick="deleteNotes()">Löschen</button>
-            </div>
+                <button class="deleteBoxButton" onclick="clearThis(title, text)">Löschen</button>
+                </div>
         </div>
         `;
+}
+
+function clearThis(title,text) {
+    
+    document.getElementById('title').value = "";
+    document.getElementById('text').value = "";
+    
 }
 
 
@@ -62,6 +70,7 @@ function addNotes() {
     let title = document.getElementById('title');
     let text = document.getElementById('text');
 
+
     if (title.value == "" || text.value == "") {
         alert('Bitte füllen Sie beide Textfelder aus!');
     }
@@ -69,6 +78,8 @@ function addNotes() {
 
         titles.push(title.value);
         texts.push(text.value);
+
+        
 
         render();
         save();

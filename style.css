@@ -34,7 +34,7 @@ body {
     margin-top: 10px;
     display: flex;
     flex-direction: column;
-    
+
     justify-content: space-around;
 
 }
@@ -46,6 +46,7 @@ body {
     box-shadow: 2px 2px 6px 1px #1D59B3;
     border: none;
     resize: none;
+    outline: none;
 }
 
 .titleField:focus {
@@ -59,6 +60,7 @@ body {
     border: none;
     box-shadow: 2px 2px 6px 1px #1D59B3;
     resize: none;
+    outline: none;
 }
 
 .nameField:focus {
@@ -71,6 +73,15 @@ body {
     height: 5vh;
     display: block;
 }
+
+.deleteBoxButton {
+    background-color: #1d59b3d0;
+    border-radius: 12px;
+    height: 4vh;
+    display: block;
+    
+}
+
 
 .notes {
     display: flex;
@@ -114,12 +125,14 @@ body {
 }
 
 .noticeContainer {
-    border: 1px solid #1D59B3;;
+    border: 1px solid #1D59B3;
+    ;
     border-radius: 12px;
     margin-top: 20px;
     width: 50vw;
     word-break: break-all;
     padding: 9px;
+    background-color: whitesmoke;
 }
 
 .noticeText {
